@@ -1,27 +1,17 @@
 void main() {
-  int x = 89;
-  int y = 23;
-  int z = 105;
-  int p = 0;
-  
-   if (x > y) {
-     p = x;
-   } else {
-    p = y;
-   } if (p < z) {
-    p = z;
-   }
-  print('bu sonlar ichidan eng kattasi bu $p');
+  int x = 5;
 
-   int  p1 = x;
+  int y = x++;
+  print(x);
 
-   if (p1 < y) {
-     p1 = y;
-   } else if(p1 < z) {
-     p1 = z;
-   } 
-   print('little number $p1');
+  print(y);
 
+  List<int> n = [30,34,12,43,12,534,12];
+
+  for (int i = 0; i < n.length; i++) {
+    // print(n[i]);
+  }
+  for (int i = n.length; i >= 1; i--) {
+  print([i]);
+  }
 }
-
-
