@@ -18,7 +18,7 @@ void main() {
     yigindi += l;
     l++;
   }
-  // print('1 dan 25 gacha sonlar yig\'indisi $yigindi');
+  print('1 dan 25 gacha sonlar yig\'indisi $yigindi');
   int raqam = 20;
   int sumYigndi = 0;
   while (raqam >= 1) {
