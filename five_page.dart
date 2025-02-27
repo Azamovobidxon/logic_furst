@@ -1,32 +1,72 @@
 void main() {
-  int n = 234;
-  int sum = 0;
-  while (n > 0) {
-    sum += n % 10;
-    n = n ~/ 10;
-  }
-  print('Raqamlar yig\'indisi $sum');
+  declareFunction('Hello everyone');
+  int firstA = 34;
+  int firsB = 34;
 
-  int n1 = 5;
-  int count = 0;
-  do {
-    count++;
-    print(count);
-  } while (n1 > count);
+  int result = add(firstA, firsB);
+  print(result);
+
+  print(add(34, 34));
+
+  isOdd(6);
+  sonYigindi(1, 25);
   print('');
-  int i = 10;
+  print('sumRange, a dan b gacha nonlar yig\'indisi  ${sumRange(1, 25)}');
+  print('');
+  print('ucht soning o\'rta arfimetigi ${middleArfmetig(34, 1, 34)}');
 
-  do {
-    print(i);
-    i--;
-  } while (i > 0);
+  print('katta son ${maxNumber(1000, 101, 500)}');
+}
 
-  int i1 = 1;
-  int n2 = 25;
-  int s = 0;
-  do {
-    s += i1;
-    i1++;
-    print('1 dan 25 gacha raqamlar yig\'indisi  $s');
-  } while (n2 > i1);
+void declareFunction(String msg) {
+  print('Massage: $msg');
+}
+
+int add(int a, int b) {
+  return a + b;
+}
+
+void isOdd(int n) {
+  if (n < 0) {
+    print('0 dan katta son kriting');
+  } else if (n.isEven) {
+    print(true);
+  } else {
+    print(false);
+  }
+}
+
+void sonYigindi(int a, int b) {
+  int sum = 0;
+  while (a <= b) {
+    sum += a;
+    a++;
+  }
+  print('a dan b gacha sonlar yig\'indsi $sum');
+}
+
+int sumRange(int a, int b) {
+  int sum = 0;
+  for (int i = a; i <= b; i++) {
+    sum += i;
+  }
+  return sum;
+}
+
+int middleArfmetig(int a, int b, int c) {
+  return (a + b + c) ~/ 3;
+}
+
+int maxNumber(int a, int b, int c) {
+  int sum = 0;
+  if (a > b) {
+    sum = a;
+  } else if (b > c) {
+    sum = b;
+  } else if (c > a) {
+    sum = c;
+  } else {
+    print('nimadir xato');
+  }
+  return sum;
 }
