@@ -49,3 +49,12 @@ void isFindPerfectNumber(int n,bool Function(int)action) {
     }
    }
 }
+
+// 3 ga bo'linadigan son function
+void findDesebliNumber(int n,bool Function(int)action){
+   for (int i = 0; i <= n;i++) {
+    if(action(i)) {
+      print(i);
+    }
+   }
+}
