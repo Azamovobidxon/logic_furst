@@ -7,8 +7,9 @@ void main() {
   // divsibleByThree(n, uchgaBoluv);
   bool Function(int) uchgaBoluv = (int son) => son % 3 == 0; 
 
+  findDesebliNumber(n, uchgaBoluv);
 
-  int n1 = 10000;
+  int n1 = 100;
 
   bool Function(int) mukammalNumber = (int number) {
     int sum = 0;
