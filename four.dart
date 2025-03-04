@@ -27,7 +27,7 @@ void main() {
       sumYigndi += raqam;
     }
     raqam--;
-    // print('juft sonlar yig\indisi $sumYigndi');
+    print('juft sonlar yig\indisi $sumYigndi');
   }
 
   int n = 100;
