@@ -80,7 +80,25 @@ int ekukFunction(int a, int b) {
   return (a * b).abs();
 }
 
+// Tub son Function
+bool isPrime(int n) {
+  for (int i = 2; i < n / 2; i++) {
+    if (n % i == 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
 void main() {
+  int n = 4;
+  print(isPrime(n));
+  if (isPrime(n)) {
+    print('$n tub son');
+  } else {
+    print('$n tub son emas');
+  }
+
   JustdiIt diIt;
   diIt = butunQisim;
   print('butun qisim ${diIt(34, 21)}');
