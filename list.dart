@@ -14,7 +14,7 @@ void main() {
     'cherries',
     'cherries',
   ];
-
+ print(fruits);
   final List<int> myList = [1];
   print(myList);
 
