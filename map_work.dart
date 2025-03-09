@@ -1,6 +1,5 @@
 void main() {
-  Map<String, int> emtuMap = {};
-  final emtyMap2 = <String, int>{};
+  
 
   Map<String, int> inventory = {
     'cakes': 20,
